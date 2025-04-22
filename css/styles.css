@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+input,
+button,
+textarea,
+select {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(184, 136, 6);
+}
+
+:root {
+    --primary-color-text: #8f8e8e;
+}
+
+/* ===CSS Index=== */
+.list {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 1.8rem;
+}
+
+.item {
+    position: relative;
+    margin-top: 10px;
+}
+
+.item:hover {
+    color: #2257ed;
+    text-decoration: underline;
+}
+
+.item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    top: 5px;
+    left: -15px;
+}
+
+/* ===CSS Cv Flex=== */
+.container {
+    width: 1170px;
+    margin: 40px auto;
+    display: flex;
+    background: #333c3d;
+}
+
+/* CSS Sidebar */
+.sidebar {
+    flex-shrink: 1;
+    padding: 40px 20px;
+    color: var(--primary-color-text);
+}
+
+.sidebar-avatar {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sidebar-heading {
+    margin-top: 16px;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.sidebar-desc,
+.sidebar-info,
+.title-content,
+.title-list {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.sidebar-info {
+    position: relative;
+    margin-top: 40px;
+}
+
+.sidebar-info::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: currentColor;
+    top: -20px;
+    right: 0;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info + .info {
+    margin-top: 16px;
+}
+
+.sidebar-title {
+    position: relative;
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sidebar-title::after {
+    position: absolute;
+    content: "";
+    width: 240px;
+    height: 2px;
+    background: currentColor;
+    top: 20px;
+    right: 0;
+}
+
+.title-content {
+    font-weight: 600;
+}
+
+.title-item {
+    position: relative;
+    margin-left: 16px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.title-item::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    top: 6px;
+    left: -16px;
+}
+
+/* CSS Content */
+.content {
+    flex-shrink: 2;
+    background: #d6d4d4;
+    padding: 20px;
+}
+
+.content-heading {
+    font-size: 2.6rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.content-desc {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.info-job {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.job-heading {
+    position: relative;
+    line-height: 1;
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.job-heading::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 16px;
+    background: currentColor;
+    top: 2px;
+    right: -10px;
+}
+
+.job-location,
+.job-date {
+    font-weight: 700;
+}
+
+.job-location,
+.job-date,
+.job-item {
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.job-list {
+    margin: 16px 0;
+}
+
+.job-item {
+    position: relative;
+    margin: 10px 0 0 26px;
+}
+
+.job-item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    top: 4px;
+    left: -26px;
+}
+
+.heading-edu {
+    margin-top: 26px;
+}
+
+.education {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.degree {
+    font-weight: 700;
+}
+
+.university {
+    margin: 0 20px;
+}
