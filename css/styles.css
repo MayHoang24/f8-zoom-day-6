@@ -88,6 +88,9 @@ a:hover {
 .container {
     width: 1170px;
     margin: 40px auto;
+}
+
+.contain {
     display: flex;
     background: #333c3d;
 }
@@ -288,4 +291,122 @@ a:hover {
 
 .university {
     margin: 0 20px;
+}
+
+/* === Css Pricing Table=== */
+.pricing {
+    padding: 40px;
+    text-align: center;
+    background: #f5f9fd;
+}
+
+.pricing-heading {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.pricing-desc {
+    margin-top: 16px;
+}
+
+.pricing-desc,
+.pricing-basic-title,
+.pricing-item,
+.pricing-btn {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #696363;
+}
+
+.pricing-table {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing-table .pricing-price:nth-child(2) {
+    background: #f0d9d9;
+}
+
+.pricing-table .pricing-price:nth-child(2):hover {
+    background: #5b79fc;
+}
+
+.pricing-price {
+    min-width: 30%;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px #f3f4f5;
+}
+
+.pricing-price:hover {
+    background: #5b79fc;
+}
+
+.pricing-price:hover * {
+    color: #fff;
+}
+
+.pricing-price:hover .pricing-btn {
+    background: #d4c603;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.pricing-basic-title {
+    color: #000;
+    font-weight: 600;
+}
+
+.pricing-basic-price {
+    position: relative;
+    display: inline-block;
+    margin-top: 26px;
+    font-size: 4rem;
+}
+
+.pricing-basic-price::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 16px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    top: 6px;
+    left: -36px;
+    rotate: 45deg;
+}
+
+.pricing-list {
+    margin-top: 26px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-item {
+    position: relative;
+    margin-left: 16px;
+}
+
+.pricing-item::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    top: 6px;
+    left: -16px;
+    border-radius: 50%;
+}
+
+.pricing-btn {
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: #696363;
 }
