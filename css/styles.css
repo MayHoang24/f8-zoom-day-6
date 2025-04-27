@@ -7,6 +7,8 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
@@ -440,4 +442,136 @@ a:hover {
     border-radius: 50%;
     top: 8px;
     left: -14px;
+}
+
+/* ==========Product-list-html======== */
+.header {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
+.header .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .header-body .header-top {
+    padding-top: 4px;
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-top .header-top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .header-top-left .header-nav {
+    position: relative;
+    margin-right: 8px;
+}
+
+.header .header-top-left .header-nav::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    top: 0;
+    right: -8px;
+}
+
+.header .header-top-left .header-nav-app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-icon {
+    font-size: 1.6rem;
+    padding: 2px;
+}
+
+.header .header-top-right .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Css Main */
+.main .container {
+    margin-top: 50px;
+}
+
+.main .main-body {
+    display: flex;
+    gap: 20px;
+}
+
+.main .sidebar {
+    max-width: 190px;
+}
+
+.main .product-list {
+    --columns: 5;
+    --spacing: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacing);
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.main .product-item {
+    width: calc(100% / var(--columns) - var(--spacing));
+    margin-left: var(--spacing);
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #d6d4d4;
+    padding-bottom: 15px;
+}
+
+.main .product-item .product-img {
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.main .product-item .product-info {
+    padding: 15px 0;
+}
+
+.main .product-item .product-title {
+    font-size: 1.8rem;
+}
+
+.main .product-item .product-price {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.main .product-item .product-btn {
+    margin-top: auto;
+    width: 100px;
+    line-height: 26px;
+    border: none;
+    border-radius: 99px;
+    color: #fff;
+    font-size: 1.5rem;
+    background: linear-gradient(-180deg, #f53d2d, #f63);
+
+    transition: translate ease 0.5s;
+}
+
+.main .product-item .product-btn:hover {
+    translate: 0 -6px;
 }
