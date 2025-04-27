@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register Layout</title>
+        <!-- Reset Css -->
+        <link rel="stylesheet" href="./css/reset.css" />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Style Css -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="register-layout">
+                <div class="register-form">
+                    <h1 class="form-heading">Register</h1>
+                    <p class="form-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Reiciendis, similique.
+                    </p>
+                    <form action="" class="form" autocomplete="off">
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-input"
+                                placeholder="Email"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="password"
+                                >Password</label
+                            >
+                            <input
+                                type="password"
+                                id="password"
+                                class="form-input"
+                                placeholder="Password"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="re-enter-password"
+                                >Re-enter Password</label
+                            >
+                            <input
+                                type="password"
+                                id="re-enter-password"
+                                class="form-input"
+                                placeholder="Re-enter Password"
+                            />
+                        </div>
+                        <div class="form-group form-group-checkbox">
+                            <label class="form-label" for="checkbox"
+                                >Agree</label
+                            >
+                            <input
+                                type="checkbox"
+                                id="checkbox"
+                                class="form-input-checkbox"
+                            />
+                        </div>
+                        <button class="register-btn form-btn">Register</button>
+                    </form>
+                    <div class="or">--- or ---</div>
+                    <button class="register-btn btn-app btn-facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Register with Facebook
+                    </button>
+                    <button class="register-btn btn-app btn-twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                        Register with Twitter
+                    </button>
+                    <button class="register-btn btn-app btn-google">
+                        <i class="fa-brands fa-google"></i>
+                        Register with Google
+                    </button>
+                </div>
+                <img src="./img/register-img.jpg" alt="" class="register-img" />
+            </div>
+        </div>
+    </body>
+</html>
